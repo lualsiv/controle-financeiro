@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Core", "0-Core", "{DA0256F1-BD3C-4804-80F9-F946A3DD3630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Infra", "1-Infra", "{3FE8B21A-1718-4789-BB40-7BDA7512E4D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Presentation", "2-Presentation", "{B2E07425-9A7D-417D-B755-E127BD6CDCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.WebApi", "ControleFinanceiro.WebApi\ControleFinanceiro.WebApi.csproj", "{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.Domain", "ControleFinanceiro.Domain\ControleFinanceiro.Domain.csproj", "{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.Application", "ControleFinanceiro.Application\ControleFinanceiro.Application.csproj", "{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.DomainBase.Exceptions", "ControleFinanceiro.DomainBase.Exceptions\ControleFinanceiro.DomainBase.Exceptions.csproj", "{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.Infra.Repository", "ControleFinanceiro.Infra.Repository\ControleFinanceiro.Infra.Repository.csproj", "{1783218F-A86D-40ED-9AB3-4276D3534908}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7E025B23-3216-421A-A8F6-70B79EBDFE8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB6AE655-5700-480A-B166-64557BCBF5A1}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		backend-deploy.yml = backend-deploy.yml
+		mysql.yaml = mysql.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.Application.Test", "ControleFinanceiro.Application.Test\ControleFinanceiro.Application.Test.csproj", "{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1783218F-A86D-40ED-9AB3-4276D3534908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1783218F-A86D-40ED-9AB3-4276D3534908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1783218F-A86D-40ED-9AB3-4276D3534908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1783218F-A86D-40ED-9AB3-4276D3534908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E025B23-3216-421A-A8F6-70B79EBDFE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E025B23-3216-421A-A8F6-70B79EBDFE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E025B23-3216-421A-A8F6-70B79EBDFE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E025B23-3216-421A-A8F6-70B79EBDFE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BABCAFD-E1D6-40F9-B8FD-73FF01A6E0B5}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABFC5F07-6A55-4B57-9BA8-1A19A8CF63AD} = {B2E07425-9A7D-417D-B755-E127BD6CDCE9}
+		{F76E5C4E-F93F-4A32-B2AD-1318F7BFF0B1} = {DA0256F1-BD3C-4804-80F9-F946A3DD3630}
+		{2D9A9810-91E6-4B59-AB94-3E3B0F7C0428} = {DA0256F1-BD3C-4804-80F9-F946A3DD3630}
+		{C67A8D9B-08F7-4111-8BCA-DADE6A6718BA} = {DA0256F1-BD3C-4804-80F9-F946A3DD3630}
+		{1783218F-A86D-40ED-9AB3-4276D3534908} = {3FE8B21A-1718-4789-BB40-7BDA7512E4D2}
+		{AA8B0EEF-5720-4101-BDDF-9CABF89EA731} = {DA0256F1-BD3C-4804-80F9-F946A3DD3630}
+	EndGlobalSection
+EndGlobal

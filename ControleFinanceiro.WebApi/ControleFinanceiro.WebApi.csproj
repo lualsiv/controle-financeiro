@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>414ac71e-c8fa-46b1-9105-e3495caf54de</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Middleware\" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Versioning" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" />
+    <None Remove="Features\" />
+    <None Remove="Features\v1\" />
+    <None Remove="Features\v1\Categoria\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\Categoria\" />
+    <None Remove="AutoMapper" />
+    <None Remove="Dtos\SubCategoria\" />
+    <None Remove="Features\v1\SubCategoria\" />
+    <None Remove="Features\v1\Lancamento\" />
+    <None Remove="Dtos\Lancamento\" />
+    <None Remove="Features\v1\Balanco\" />
+    <None Remove="Dtos\Balanco\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\v1\" />
+    <Folder Include="Features\v1\Categoria\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\Categoria\" />
+    <Folder Include="Dtos\SubCategoria\" />
+    <Folder Include="Features\v1\SubCategoria\" />
+    <Folder Include="Features\v1\Lancamento\" />
+    <Folder Include="Dtos\Lancamento\" />
+    <Folder Include="Features\v1\Balanco\" />
+    <Folder Include="Dtos\Balanco\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiro.Domain\ControleFinanceiro.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ControleFinanceiro.Infra.Repository\ControleFinanceiro.Infra.Repository.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ControleFinanceiro.Application\ControleFinanceiro.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

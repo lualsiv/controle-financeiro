@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Services\" />
+    <None Remove="Repositories\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Otc.ComponentModel.Annotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControleFinanceiro.DomainBase.Exceptions\ControleFinanceiro.DomainBase.Exceptions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Otc.ComponentModel.Annotations" Version="1.0.1" />
+  </ItemGroup>
+</Project>
