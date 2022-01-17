@@ -50,3 +50,6 @@ Processo de utlização de containers(containerd), para compilar basta seguir os
 
 #### Implantar e executar o microsserviço de back-end
 >$ kubectl apply -f backend-deploy.yml
+
+#### Implantar e executar o microsserviço de SQL
+>$ kubectl apply -f mysql-deployment.yml
