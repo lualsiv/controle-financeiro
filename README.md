@@ -10,6 +10,7 @@ O objetivo da arquitetura hexagonal é encapsular a lógica, de maneira que nada
 
 ## Projeto Controle Fnanceiro
 A ideia deste projeto é ter uma base para a criação de Apis seguindo um modelo maduro e de fácil adaptação.
+utilizado sagger para facilitar os teste das chamada aos endpoints.
 
 A estrutura do projeto está dividida em 03 (três) camadas, sendo elas: Core, Infra e Presenter.
 
