@@ -13,7 +13,12 @@ spec:
       containers:
       - name: controlefinanceiro
         image: lualsiv/controlefinanceiro
-        #imagePullPolicy: Never
+        env:
+          # This will help in displaying full error
+        - name: ASPNETCORE_ENVIRONMENT
+          value: Development
+        - name: MYSQLCONNECTION
+          value: server=db;port=3306;database=controle-financeiro;user=root;password=bindu123
         ports:
         - containerPort: 4200
         env:

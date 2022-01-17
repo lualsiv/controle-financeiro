@@ -10,8 +10,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: $MYSQL_DATABASE
       MYSQL_USER: docker
-      MYSQL_PASSWORD: docker
-      # TZ: 'Asia/Tokyo'
+      MYSQL_PASSWORD: docker      
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:      
       - mysql-data:/var/lib/mysql
