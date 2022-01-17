@@ -55,3 +55,4 @@ Processo de utlização de containers(containerd), para compilar basta seguir os
 #### Implantar e executar o microsserviço de SQL
 >$ kubectl apply -f mysql-deployment.yml
 > para acessar a aplicação utilizar a seguinte url http://localhost:4200/swagger/index.html para acessar os endpoint pelo swagger
+![Swagger](https://github.com/lualsiv/controle-financeiro/blob/main/swagger.png)
