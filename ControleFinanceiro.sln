@@ -25,7 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.env = .env
 		backend-deploy.yml = backend-deploy.yml
-		mysql.yaml = mysql.yaml
+		mysql-deployment.yaml = mysql-deployment.yaml
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleFinanceiro.Application.Test", "ControleFinanceiro.Application.Test\ControleFinanceiro.Application.Test.csproj", "{AA8B0EEF-5720-4101-BDDF-9CABF89EA731}"
