@@ -42,7 +42,7 @@ Processo de utlização de containers(containerd), para compilar basta seguir os
 
 ## Kubernetes
 
-#### Entrar no Docker Hub
+#### Entrar no Docker Hub 
 >$ nerdctl login
 
 #### Fazer upload das imagens para o Docker Hub
@@ -54,3 +54,4 @@ Processo de utlização de containers(containerd), para compilar basta seguir os
 
 #### Implantar e executar o microsserviço de SQL
 >$ kubectl apply -f mysql-deployment.yml
+> para acessar a aplicação utilizar a seguinte url http://localhost:4200/swagger/index.html para acessar os endpoint pelo swagger
